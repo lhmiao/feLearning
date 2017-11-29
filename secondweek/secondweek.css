@@ -1,0 +1,789 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "微软雅黑";
+  background-color: #f8f8f8;
+}
+
+.allcontent {
+  width: 1280px;
+  margin: auto;
+}
+
+/*********************************这是top部分的css*********************************/
+.top {
+  height: 58px;
+  background-color: white
+}
+
+.top_left {
+  display: inline-block;
+  font-size: 21px;
+  font-family: "黑体";
+  margin-left: 60px;
+  padding-top: 14px;
+}
+
+.top_left div {
+  display: inline-block;
+  margin: 0px 484px 0px 10px;
+  vertical-align: 6px;
+}
+
+nav {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: 16px;
+}
+
+.nav {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.nav a {
+  padding-bottom: 21px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.nav .nav_a1 {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.nav a:link, .nav a:visited {
+  text-decoration: none;
+  color: #83868d;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: #ea6f6e;
+  border-bottom: 5px solid #ea6f6e;
+}
+
+.selected a:link, .selected a:visited {
+  color: #ea6f6e;
+}
+
+.selected {
+  padding-bottom: 21px;
+  border-bottom: 5px solid #ea6f6e;
+}
+
+.signin {
+  display: inline-block;
+  margin-left: 21px;
+}
+
+.signin a:link, .signin a:visited {
+  text-decoration: none;
+  color: #ea6f6e;
+}
+
+.signin a:hover {
+  font-weight: bold;
+}
+
+nav img {
+  vertical-align: -4px;
+  margin-right: 6px;
+}
+/*********************************这是top部分的css*********************************/
+
+/**************************这是time_of_new_life部分的css***************************/
+.time_of_new_life {
+  background-image: url(images/time_of_new_life.jpg);
+  height: 690px;;
+  color: white;
+}
+
+.time_of_new_life p {
+  margin: 0px;
+  font-size: 21px;
+}
+
+.time_of_new_life p:nth-child(1) {
+  font-size: 60px;
+  padding: 235px 0px 15px 118px;
+}
+
+.time_of_new_life p:nth-child(2) {
+  padding: 0px 0px 4px 125px;
+  font-weight: lighter;
+}
+
+.time_of_new_life p:nth-child(3) {
+  padding: 0px 0px 65px 125px;
+  font-weight:lighter;
+}
+
+.time_of_new_life button {
+  margin-left: 125px;
+  width: 330px;
+  height: 64px;
+  background-color: #e74f4d;
+  color: white;
+  font-size: 30px;
+  border: none;
+}
+
+.time_of_new_life button:focus {
+  outline: none;
+}
+
+.time_of_new_life button:hover {
+  background-color: #db3c3a;
+}
+/**************************这是time_of_new_life部分的css***************************/
+
+/*****************************这是four_blocks部分的css*****************************/
+.four_blocks {
+  font-size: 14px;
+  font-family: "黑体";
+  color: #8d8d8d;
+  background-color: white;
+  text-align: center;
+  height: 250px;
+}
+
+.four_blocks div {
+  display: inline-block;
+  padding-top: 47px;
+  width: 25%;
+}
+
+.four_blocks p {
+  margin: 0px;
+}
+
+.four_blocks p:nth-child(2n) {
+  margin-top: 50px;
+}
+
+.four_blocks p:nth-child(2n+1) {
+  padding-bottom: 20px;
+}
+
+.block2 p {
+  border-left: 2px solid #8d8d8d;
+  border-right: 1px solid #8d8d8d;
+}
+
+.block3 p {
+  border-left: 1px solid #8d8d8d;
+  border-right: 2px solid #8d8d8d;
+}
+/*****************************这是four_blocks部分的css*****************************/
+
+/*************************这是what_you_dont_konw部分的css**************************/
+.what_you_dont_know {
+  font-size: 54px;
+  font-family: "黑体";
+  color: #a1a1a1;
+  background-color: #edecec;
+  height: 360px;
+  text-align: center;
+}
+
+.what_you_dont_know img {
+  padding-top: 90px;
+}
+
+.what_you_dont_know p {
+  margin-top: 40px;
+}
+/*************************这是what_you_dont_konw部分的css**************************/
+
+/**********************这是city_activity_information部分的css**********************/
+.city_activity_information {
+  height: 340px;
+  background-image: url(images/map.jpg);
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+
+.city_activity_information p {
+  margin: 0px;
+}
+
+.city_activity_information p:nth-child(1) {
+  font-size: 21px;
+  padding-top: 55px;
+}
+
+.city_activity_information p:nth-child(2) {
+  width: 29px;
+  border: 1px solid white;
+  margin: 10px 0px 20px 624px;
+}
+
+.city_activity_information p:nth-child(3) {
+  font-size: 12px;
+  margin-bottom: 52px;
+}
+
+.city_activity_information select, .city_activity_information input {
+  display: inline-block;
+  width: 235px;
+  height: 35px;
+  margin-right: 25px;
+}
+
+.city_activity_information select {
+  font-size: 12px;
+  color: #909393;
+  border: none;
+}
+
+.city_activity_information select:focus
+{
+  outline-color: #be4e48;
+}
+
+.city_activity_information input {
+  font-size: 14px;
+  color: white;
+  background-color: #be4e48;
+  border: none;
+  font-weight: lighter;
+}
+
+.city_activity_information input:hover {
+  background-color: #db3c3a;
+}
+/**********************这是city_activity_information部分的css**********************/
+
+/****************************这是city_activity部分的css****************************/
+.city_activity {
+  height: 606px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.city_activity div {
+  display: inline-block;
+  padding-top: 100px;
+  margin-right: 30px;
+}
+
+.city_activity img {
+  border: 1px solid #d1d1d2;
+  padding: 12px 10px 12px 10px;
+  background-color: white;
+}
+
+.city_activity p:nth-child(2n) {
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.city_activity p:nth-child(2n+1) {
+  font-size: 12px;
+  color: #909393;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.city_activity p:nth-child(1) {
+  font-size: 20px;
+  color: black;
+  text-indent: 38px;
+  letter-spacing: 39px;
+}
+
+.city_activity div:nth-child(1), .city_activity div:nth-child(2) {
+  margin-right: 5px;
+}
+
+.city_activity div:nth-child(2) p:nth-child(2) {
+  font-size: 12px;
+  color: #909393;
+}
+/****************************这是city_activity部分的css****************************/
+
+/******************************这是new_world部分的css******************************/
+.new_world {
+  height: 565px;
+  color: white;
+  font-weight: 400;
+}
+
+.new_world p {
+  margin: 0px;
+}
+
+.new_world_left {
+  display: inline-block;
+  width: 850px;
+  height: 565px;
+  background-image: url(images/new_world.jpg);
+  vertical-align: top;
+}
+
+.new_world_left p:nth-child(1) {
+  font-size: 49px;
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: -44px;
+}
+
+.new_world_left p:nth-child(2) {
+  font-size: 158px;
+  text-align: center;
+}
+
+.new_world_left p:nth-child(4) {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 47px;
+}
+
+.new_world_left p:nth-child(5) {
+  font-size: 22px;
+  margin-left: 347px;
+  padding-top: 14px;
+}
+
+.new_world_left .triangle {
+  border: 25px solid transparent;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  border-right: 25px solid white;
+  margin-top: -77px;
+}
+
+.new_world_right {
+  display: inline-block;
+  background-color: white;
+  width: 430px;
+  height: 565px;
+  color: #aaa;
+  font-weight: normal;
+}
+
+.new_world_right p {
+  font-size: 12px;
+  font-family: "宋体";
+  margin-left: 73px;
+  font-weight: bold;
+  line-height: 3em;
+}
+
+.new_world_right p:nth-child(1) {
+  color: black;
+  font-size: 20px;
+  padding-top: 150px;
+  font-family: "微软雅黑";
+  margin-left: 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1em;
+}
+
+.new_world_right p:nth-child(1) span {
+  color: #e7504d;
+}
+
+.new_world_right button {
+  font-size: 12px;
+  font-weight: bold;
+  color: #e25c60;
+  background-color: inherit;
+  width: 105px;
+  height: 32px;
+  border: 1px solid #e25255;
+  margin: 35px 150px 0px 164px;
+}
+
+.new_world_right button:hover {
+  color: white;
+  background: #e25c60;
+}
+
+.new_world_right button:focus {
+  outline: none;
+}
+
+.new_world_right .circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid #929293;
+  margin-top: 24px;
+  margin-right: 12px;
+}
+
+.new_world_right .circle_selected {
+  background-color: #929293;
+  margin-left: 183px;
+}
+
+.new_world_right div:hover {
+  background-color: #929293;
+}
+/******************************这是new_world部分的css******************************/
+
+/******************************这是new_period部分的css******************************/
+.new_period {
+  height: 521px;
+  font-size: 21px;
+  font-family: "黑体";
+}
+
+.new_period>div {
+  display: inline-block;
+  height: 521px;
+  vertical-align: top;
+}
+
+.new_period p {
+  margin: 0px;
+}
+
+.new_period_left {
+  background-color: #e74f4d;
+  width: 425px;
+  text-align: center;
+  color: white;
+}
+
+.new_period_left p:nth-of-type(1) {
+  padding-top: 175px;
+  margin-bottom: 10px;
+}
+
+.new_period_left p:nth-of-type(3) {
+  border-bottom: 2px solid white;
+  width: 30px;
+  margin: 28px auto 28px auto;
+}
+
+.new_period_left button {
+  width: 170px;
+  height: 40px;
+  background-color: #e74f4d;
+  color: white;
+  font-size: 21px;
+  font-family: "黑体";
+  border: 1px solid white;
+}
+
+.new_period_left button:hover {
+  color: #e74f4d;
+  background-color: white;
+}
+
+.new_period_left button:focus {
+  outline: none;
+}
+
+.new_period_center {
+  background-color: white;
+  width: 425px;;
+  text-align: center;
+  color: #e74f4d;
+}
+
+.new_period_center p:nth-of-type(1) {
+  padding-top: 175px;
+  margin-bottom: 10px;
+}
+
+.new_period_center p:nth-of-type(3) {
+  border-bottom: 2px solid #e74f4d;
+  width: 30px;
+  margin: 28px auto 28px auto;
+}
+
+.new_period_center button {
+  width: 170px;
+  height: 40px;
+  background-color: white;
+  color: #e74f4d;
+  font-size: 21px;
+  font-family: "黑体";
+  border: 1px solid #e74f4d;
+}
+
+.new_period_center button:hover {
+  color: white;
+  background-color: #e74f4d;
+}
+
+.new_period_center button:focus {
+  outline: none;
+}
+
+.new_period_right {
+  background-image: url("images/wait_subway.jpg");
+  width: 430px;
+}
+
+.new_period_right .triangle {
+  border: 25px solid transparent;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  border-left: 25px solid white;
+  margin-top: 245px;
+}
+/******************************这是new_period部分的css******************************/
+
+/***************************这是become_volunteer部分的css***************************/
+.become_volunteer {
+  height: 750px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.become_volunteer p {
+  margin: 0px;
+}
+
+.become_volunteer>p:nth-of-type(1) {
+  font-size: 21px;
+  font-family: "宋体";
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 116px;
+}
+
+.become_volunteer>p:nth-of-type(2) {
+  width: 30px;
+  border-bottom: 2px solid #e7504d;
+  margin-left: 627px;
+  margin-bottom: 12px;
+}
+
+.become_volunteer>p:nth-of-type(3) {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+.become_volunteer>p:nth-of-type(4) {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 105px;
+}
+
+.volunteer_information {
+  display: inline-block;
+  margin-left: 140px;
+}
+
+.volunteer_information>p:nth-of-type(1), .volunteer_information>p:nth-of-type(4),
+.volunteer_information>p:nth-of-type(7) {
+  font-size: 14px;
+  font-family: "黑体";
+  color: #231815;
+  margin-bottom: 30px;
+}
+
+.volunteer_information>p:nth-of-type(2), .volunteer_information>p:nth-of-type(3),
+.volunteer_information>p:nth-of-type(5), .volunteer_information>p:nth-of-type(6) {
+  font-size: 12px;
+  font-family: "宋体";
+  color: #adabab;
+  line-height: 23px;
+}
+
+.volunteer_information>p:nth-of-type(4) {
+  margin-top: 30px;
+}
+
+.volunteer_information>p:nth-of-type(7) {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.volunteer_information a {
+  font-size: 12px;
+  font-family: "宋体";
+  color: #959291;
+  text-decoration: none;
+  margin-left: 251px;
+  font-weight: normal;
+}
+
+.volunteer_information a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.volunteer_information span {
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.volunteer_form {
+  display: inline-block;
+  vertical-align: top;
+  width: 650px;
+  margin-left: 70px;
+}
+
+.volunteer_form div {
+  display: inline-block;
+  background-color: #edecee;
+  margin-bottom: 15px;
+}
+
+.volunteer_form div:nth-of-type(1), .volunteer_form div:nth-of-type(2),
+.volunteer_form div:nth-of-type(3), .volunteer_form div:nth-of-type(4) {
+  width: 310px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.volunteer_form input, .volunteer_form textarea {
+  border: none;
+  background-color: #edecee;
+  padding: 0px;
+  height: 40px;
+}
+
+.volunteer_form input:focus, .volunteer_form textarea:focus {
+  outline: none;
+}
+
+.volunteer_form div:nth-of-type(5) {
+  width: 637px;
+}
+
+.volunteer_form textarea {
+  margin-left: 17px;
+  height: 130px;
+}
+
+.volunteer_form label {
+  font-size: 12px;
+  font-family: "宋体";
+  font-weight: normal;
+  color: #6c6868;
+  margin-left: 17px;
+}
+
+.volunteer_form form>input {
+  width: 637px;
+  font-size: 14px;
+  font-family: "黑体";
+  color: #323333;
+  font-weight: bold;
+}
+
+.volunteer_form form>input:hover {
+  background-color: #e2e2ed;
+}
+/***************************这是become_volunteer部分的css***************************/
+
+/******************************这是connect_us部分的css******************************/
+.connect_us {
+  height: 360px;
+  background-color: #32353e;
+  color: white;
+}
+
+.connect_us p {
+  margin: 0px;
+  text-align: center;
+}
+
+.connect_us p:nth-of-type(1) {
+  font-size: 21px;
+  font-family: "黑体";
+  padding-top: 90px;
+  margin-bottom: 5px;
+}
+
+.connect_us p:nth-of-type(2), .connect_us p:nth-of-type(3) {
+  font-size: 12px;
+  font-family: "宋体";
+  line-height: 20px;
+}
+
+.connect_us form {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.connect_us input:nth-of-type(1) {
+  width: 430px;
+  height: 40px;
+  font-size: 14px;
+  color: #aaa;
+  text-indent: 10px;
+  vertical-align: top;
+}
+
+.connect_us input:nth-of-type(2) {
+  width: 80px;
+  height: 46px;
+  background-color: #6f7178;
+  border: 1px solid #51535b;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.connect_us input:nth-of-type(1):focus {
+  outline: none;
+}
+
+.connect_us input:nth-of-type(2):focus {
+  outline: none;
+}
+
+.connect_us input:nth-of-type(2):hover {
+  background-color: #515977;
+}
+
+.connect_us a {
+  display: inline-block;
+  margin-right: 27px;
+   transition:  transform 0.8s;
+}
+
+.connect_us a:nth-of-type(1) {
+  margin-left: 550px;
+}
+
+.connect_us a:hover {
+  transform: rotate(360deg);
+}
+/******************************这是connect_us部分的css******************************/
+
+/********************************这是footer部分的css********************************/
+.footer {
+  background-color: #303039;
+  height: 58px;
+  color: white;
+  font-size: 12px;
+  font-family: "宋体";
+}
+
+.footer p {
+  display: inline-block;
+  margin: 0px;
+  padding: 30px 1005px 0px 100px;
+}
+
+.footer a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  font-weight: bold;
+}
+/********************************这是footer部分的css********************************/

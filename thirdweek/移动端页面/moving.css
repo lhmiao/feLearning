@@ -1,0 +1,227 @@
+body {
+  margin: 0px;
+}
+
+/*******************************这是return部分的css*****************************/
+.return {
+  background-color: #91d4da;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.return p {
+  display: inline-block;
+  margin-left: 35%;
+}
+
+.return a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.return a span {
+  display: inline-block;
+  vertical-align: -5px;
+  font-weight: normal;
+  font-size: 40px;
+  margin-left: 3%;
+}
+/*******************************这是return部分的css*****************************/
+
+/*********************************这是nav部分的css******************************/
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: bold;
+  color: #656565;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  line-height: 3;
+  flex: 1 20%;
+  text-align: center;
+}
+
+.nav a:hover {
+  border-bottom: 5px solid #92d5db;
+}
+
+.nav .selected {
+  border-bottom: 5px solid #92d5db;
+}
+/*********************************这是nav部分的css******************************/
+
+/********************************这是image部分的css*****************************/
+.image img {
+  width: 100%;
+}
+/********************************这是image部分的css*****************************/
+
+/*********************************这是tag部分的css******************************/
+.tag {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-top: 40px;
+  padding-bottom: 55px;
+  border-bottom: 5px solid #dedede;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.tag a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+/*********************************这是tag部分的css******************************/
+
+/******************************这是Feng_Lang部分的css***************************/
+.Feng_Lang {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 40px;
+  border-bottom: 35px solid #f5f5f5;
+}
+
+.Feng_Lang div {
+  flex: 1 33%;
+  padding-top: 22px;
+  padding-bottom: 15px;
+}
+
+.Feng_Lang div:nth-of-type(2) {
+  border-left: 5px solid #dedede;
+  border-right: 5px solid #dedede;
+}
+
+.Feng_Lang div p:nth-of-type(1) {
+  font-size: 27px;
+  font-family: "宋体";
+  margin-bottom: 0px;
+}
+
+.Feng_Lang div p:nth-of-type(2) {
+  font-size: 20px;
+  color: #5b5b5b;
+}
+/******************************这是Feng_Lang部分的css***************************/
+
+/****************************这是mode_1与mode_2部分的css************************/
+.mode_1, .mode_2 {
+  font-size: 20px;
+  color: #5b5b5b;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 35px solid #f5f5f5;
+}
+
+.mode_1>p, .mode_2>p {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size:35px;
+  padding-bottom: 33px;
+  border-bottom: 5px solid #f5f5f5;
+  text-align: left;
+}
+
+.mode_1_content, .mode_2_content {
+  display: grid;
+  padding: 40px;
+  grid-template-columns: 24% 32% 32%;
+  grid-template-rows: repeat(4, 10%);
+  grid-gap: 50px 50px;
+}
+
+.mode_1_content p,.mode_2_content p {
+  background-color: #f8f8f8;
+  margin: 0px;
+  align-self: stretch;
+  padding-top: 9%;
+  padding-bottom: 9%;
+}
+
+.mode_1_content img, .mode_2_content img {
+  width: 100%;
+}
+
+.mode_1_content img:nth-of-type(1),
+.mode_2_content img:nth-of-type(1) {
+  grid-area: 1/1/3/2;
+}
+
+.mode_1_content img:nth-of-type(2),
+.mode_2_content img:nth-of-type(2) {
+  grid-area: 3/1/5/2;
+}
+/****************************这是mode_1与mode_2部分的css************************/
+
+/************************这是artical_1与artical_2部分的css**********************/
+.artical_1, .artical_2 {
+  border-bottom: 5px solid #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.artical_1 p, .artical_2 p {
+  margin: 0px;
+}
+
+.artical_1 img, .artical_2 img {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.artical_1 div,  .artical_2 div{
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.artical_1 p:nth-of-type(1),
+.artical_2 p:nth-of-type(1) {
+  font-size: 32px;
+  color: #626262;
+}
+
+.artical_1 p:nth-of-type(2),
+.artical_2 p:nth-of-type(2) {
+  font-size: 20px;
+  color: #c6c6c6;
+}
+/************************这是artical_1与artical_2部分的css**********************/
+
+/***********************这是three_pictures_artical部分的css*********************/
+.three_pictures_artical {
+  border-bottom: 136px solid #f8f8f8;
+}
+
+.three_pictures_artical p:nth-of-type(1) {
+  font-size: 32px;
+  color: #626262;
+  margin-left: 3%;
+}
+
+.three_pictures_artical .three_pictures {
+  display: flex;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.three_pictures_artical p:nth-of-type(2) {
+  font-size: 20px;
+  color: #c8c8c8;
+  margin-left: 3%;
+}
+/***********************这是three_pictures_artical部分的css*********************/
