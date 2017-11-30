@@ -1,10 +1,10 @@
-function addNumOnclick(price, num, num_price) {
+function addNumOnclick(price, num, num_price) { //让单项商品的总价以及所有商品的总价随增加数量的input的增加而实时增加
   num_price.setAttribute("value", price.getAttribute("value")*num.value)
   num_price.innerText = "该项商品总价：￥" + num_price.getAttribute("value");
   sum();
 }
 
-function sum() {
+function sum() { //计算并显示所有商品总价
   var item_num_price = document.getElementsByClassName("item_num_price");
   var item_sum = 0;
   for(let i of item_num_price)
@@ -13,7 +13,7 @@ function sum() {
   document.getElementById("sum").innerText = "所有商品总价：￥" + document.getElementById("sum").getAttribute("value");
 }
 
-function addNewItem() {
+function addNewItem() { //创建并添加新的商品
   var new_name = document.getElementById("new_item_name").value;
   var new_price = document.getElementById("new_item_price").value;
   var new_num = document.getElementById("new_item_num").value;
@@ -57,7 +57,7 @@ window.onload = function () {
   var item_num = document.getElementsByClassName("item_num");
   var item_num_price = document.getElementsByClassName("item_num_price");
   for(let i=0;i<item_num.length;i++) {
-    item_num[i].onclick = function () {
+    item_num[i].onclick = function () { //将每个增加数量的input的onclick事情绑到这个函数
       addNumOnclick(item_price[i], item_num[i], item_num_price[i]);
     }
   }
