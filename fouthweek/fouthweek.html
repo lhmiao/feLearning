@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>我的购物车</title>
+    <link type="text/css" rel="stylesheet" href="fouthweek.css">
+  </head>
+  <body>
+    <header>
+      <h1>购物车</h1>
+    </header>
+
+    <main>
+      <h2>已加入购物车的商品</h2>
+      <div id="content">
+        <div class="item">
+          <span class="item_name">商品名称：笔记本</span>
+          <span class="item_price" value="5">商品单价：￥5</span>
+          <label>商品数量：<input type="number" min="0" class="item_num" value="0"></label>
+          <span class="item_num_price" value="0">该项商品总价：￥</span>
+        </div>
+        <div class="item">
+          <span class="item_name">商品名称：笔</span>
+          <span class="item_price" value="2">商品单价：￥2</span>
+          <label>商品数量：<input type="number" min="0" class="item_num" value="0"></label>
+          <span class="item_num_price" value="0">该项商品总价：￥</span>
+        </div>
+        <div class="item">
+          <span class="item_name">商品名称：杯子</span>
+          <span class="item_price" value="3">商品单价：￥3</span>
+          <label>商品数量：<input type="number" min="0" class="item_num" value="0"></label>
+          <span class="item_num_price" value="0">该项商品总价：￥</span>
+        </div>
+
+      </div>
+      <h2>添加新商品</h2>
+      <div class="add_item">
+        <label>商品名称：<input type="text" id="new_item_name"></label>
+        <label>商品单价：￥<input type="number" min="0" value="0" id="new_item_price"></label>
+        <label>商品数量：<input type="number" min="0" value="0" id="new_item_num"></label>
+        <input type="submit" value="添加该商品" id="add_new_item">
+      </div>
+      <div class="bill">
+        <label>收货地址：<input type="text"></label>
+        <span id="sum" value="0">所有商品总价：￥</span>
+        <input type="submit" value="确认支付">
+      </div>
+    </main>
+
+    <footer><p>@购物车测试版 By lhm</p></footer>
+
+    <script type="text/javascript" src="fouthweek.js"></script>
+  </body>
+</html>

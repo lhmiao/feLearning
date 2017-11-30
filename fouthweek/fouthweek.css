@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+body {
+  margin: 0px;
+  font-family: "微软雅黑";
+}
+
+/****************************这是header部分的css********************************/
+header h1 {
+  text-align: center;
+  background-color: #e74f4d;
+  color: white;
+  margin: 0px;
+  padding: 10px 0px;
+}
+/****************************这是header部分的css********************************/
+
+/******************************这是main部分的css********************************/
+main {
+  width: 80%;
+  margin: auto;
+  background-color: #edecec;
+  color: #323233;
+}
+
+main h2 {
+  margin: 0px;
+  padding: 10px;
+  border-bottom: 2px solid #b7b5b5;
+}
+
+main h2:nth-of-type(2) {
+  border-top: 2px solid #b7b5b5;
+}
+
+/************************这是content部分的css******************************/
+#content {
+  min-height: 656px;
+  padding: 0px 10px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.item span, .item label {
+  flex-basis: 25%;
+}
+
+.item input {
+  width: 45%;
+}
+
+.item + div {
+  border-top: 1px solid #a1a1a1;
+  padding-top: 7px;
+}
+/************************这是content部分的css******************************/
+
+/************************这是add_item部分的css*****************************/
+.add_item {
+  margin: 0px 10px;
+  padding: 10px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.add_item label input {
+  width: 50%;
+}
+/************************这是add_item部分的css*****************************/
+
+/****************************这是bill部分的css*****************************/
+.bill {
+  margin: 0px 10px;
+  padding: 10px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.bill label input {
+  width: 50%;
+}
+
+.bill input {
+  width: 82px;
+}
+/****************************这是bill部分的css*****************************/
+
+/******************************这是main部分的css********************************/
+
+/*****************************这是footer部分的css*******************************/
+footer p {
+  margin: 0px;
+  padding: 10px 0px;
+  background-color: #e74f4d;
+  color: white;
+  text-align: center;
+}
+/*****************************这是footer部分的css*******************************/
