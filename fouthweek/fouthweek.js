@@ -49,7 +49,9 @@ function addNewItem() { //创建并添加新的商品
   input.onclick = function () {
     addNumOnclick(span_price, input, span_num_price);
   }
-  sum();
+  var item_sum = document.getElementById("sum");
+  item_sum.setAttribute("value", Number(item_sum.getAttribute("value"))+new_num_price);
+  item_sum.innerText = "所有商品总价：￥" + item_sum.getAttribute("value");
 }
 
 window.onload = function () {
