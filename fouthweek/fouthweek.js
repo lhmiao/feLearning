@@ -4,6 +4,16 @@ function addNumOnclick(price, num, num_price) { //让单项商品的总价以及
   sum();
 }
 
+function deleteOnclick(num_price) { //删除某项商品并实时更新所有商品的总价
+  var delete_item = num_price.parentNode;
+  var delete_num_price = num_price.getAttribute("value");
+  var parent = document.getElementById("content");
+  parent.removeChild(delete_item);
+  var item_sum = document.getElementById("sum");
+  item_sum.setAttribute("value", item_sum.getAttribute("value")-delete_num_price);
+  item_sum.innerText = "所有商品总价：￥" + item_sum.getAttribute("value");
+}
+
 function sum() { //计算并显示所有商品总价
   var item_num_price = document.getElementsByClassName("item_num_price");
   var item_sum = 0;
@@ -25,6 +35,7 @@ function addNewItem() { //创建并添加新的商品
   var label_txt = document.createTextNode("商品数量：");
   var input = document.createElement("input");
   var span_num_price = document.createElement("span");
+  var button_delete = document.createElement("button");
   div_item.setAttribute("class", "item");
   span_name.setAttribute("class", "item_name");
   span_name.innerText = "商品名称：" + new_name;
@@ -40,14 +51,21 @@ function addNewItem() { //创建并添加新的商品
   span_num_price.setAttribute("class", "item_num_price");
   span_num_price.setAttribute("value", new_num_price);
   span_num_price.innerText = "该项商品总价：￥" + new_num_price;
+  button_delete.setAttribute("type", "button");
+  button_delete.setAttribute("class", "delete");
+  button_delete.innerText = "删除该商品";
   div_item.appendChild(span_name);
   div_item.appendChild(span_price);
   div_item.appendChild(label);
   div_item.appendChild(span_num_price);
+  div_item.appendChild(button_delete);
   var content = document.getElementById("content");
   content.appendChild(div_item);
   input.onclick = function () {
     addNumOnclick(span_price, input, span_num_price);
+  }
+  button_delete.onclick = function () {
+    deleteOnclick(span_num_price);
   }
   var item_sum = document.getElementById("sum");
   item_sum.setAttribute("value", Number(item_sum.getAttribute("value"))+new_num_price);
@@ -58,9 +76,13 @@ window.onload = function () {
   var item_price = document.getElementsByClassName("item_price");
   var item_num = document.getElementsByClassName("item_num");
   var item_num_price = document.getElementsByClassName("item_num_price");
+  var item_delete = document.getElementsByClassName("delete");
   for(let i=0;i<item_num.length;i++) {
     item_num[i].onclick = function () { //将每个增加数量的input的onclick事情绑到这个函数
       addNumOnclick(item_price[i], item_num[i], item_num_price[i]);
+    }
+    item_delete[i].onclick = function () { //将每个删除的onclick事情绑到这个函数
+      deleteOnclick(item_num_price[i]);
     }
   }
   var add_new_item = document.getElementById("add_new_item");
