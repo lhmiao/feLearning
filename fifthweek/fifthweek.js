@@ -1,4 +1,4 @@
-function leftIn(input, show_place, arr) {
+function leftIn(input, show_place, arr) { //将输入的数字从左侧插入队列和arr数组
   if(!is_in_range(input.value)) {
     alert("请输入10-100的数字");
     return;
@@ -17,7 +17,7 @@ function leftIn(input, show_place, arr) {
   arr.unshift(new_span);
 }
 
-function rightIn(input, show_place, arr) {
+function rightIn(input, show_place, arr) { //将输入的数字从右侧插入队列和arr数组
   if(!is_in_range(input.value)) {
     alert("请输入10-100的数字");
     return;
@@ -33,31 +33,37 @@ function rightIn(input, show_place, arr) {
   arr.push(new_span);
 }
 
-function leftOut(input, show_place, arr) {
+function leftOut(input, show_place, arr) { //将输入的数字从队列和arr数组左侧输出
   var left_first_span = show_place.firstElementChild;
   if(left_first_span==null) {
     alert("当前队列为空！！！");
     return;
   }
+  else {
+    alert("队列左侧数字为："+left_first_span.getAttribute("value"));
+  }
   show_place.removeChild(left_first_span);
   arr.shift();
 }
 
-function rightOut(input, show_place, arr) {
+function rightOut(input, show_place, arr) { //将输入的数字从队列和arr数组右侧输出
   var right_last_span = show_place.lastElementChild;
   if(right_last_span==null) {
     alert("当前队列为空！！！");
     return;
   }
+  else {
+    alert("队列右侧数字为："+right_last_span.getAttribute("value"));
+  }
   show_place.removeChild(right_last_span);
   arr.pop();
 }
 
-function is_in_range(value) {
+function is_in_range(value) { //判断输入的数字是否在10-100范围内
   return value>=10&&value<=100?true:false;
 }
 
-function sort_number(show_place, arr) {
+function sort_number(show_place, arr) { //对arr数组和队列进行排序
   arr.sort(function (x, y) {
     var x_value = x.getAttribute("value");
     var y_value = y.getAttribute("value");
@@ -78,7 +84,7 @@ function sort_number(show_place, arr) {
 window.onload = function () {
   var input = document.getElementById("input");
   var show_place = document.getElementById("show_place");
-  var arr = [];
+  var arr = []; //将输入的数字的span存在arr数组中，并在该数组上进行排序
 
   document.getElementById("left_in").onclick = function () {
     leftIn(input, show_place, arr);
