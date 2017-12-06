@@ -1,0 +1,26 @@
+button:hover {
+  cursor: pointer;
+}
+
+button:nth-of-type(2n+1) {
+  margin-left: 50px;
+}
+
+div::after {
+  content: "";
+  display: inline-block;
+  height: 120px;
+  vertical-align: bottom;
+}
+
+div span {
+  display: inline-block;
+  background-color: red;
+  width: 20px;
+  height: 0px;
+  vertical-align: bottom;
+}
+
+div span + span {
+  margin-left: 2px;
+}

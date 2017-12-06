@@ -5,7 +5,7 @@ function addNumOnclick(price, num, num_price) { //让单项商品的总价以及
 }
 
 function deleteOnclick(num_price) { //删除某项商品并实时更新所有商品的总价
-  var delete_item = num_price.parentNode;
+  var delete_item = num_price.parentElement;
   var delete_num_price = num_price.getAttribute("value");
   var parent = document.getElementById("content");
   parent.removeChild(delete_item);
@@ -73,16 +73,13 @@ function addNewItem() { //创建并添加新的商品
 }
 
 window.onload = function () {
-  var item_price = document.getElementsByClassName("item_price");
-  var item_num = document.getElementsByClassName("item_num");
-  var item_num_price = document.getElementsByClassName("item_num_price");
-  var item_delete = document.getElementsByClassName("delete");
-  for(let i=0;i<item_num.length;i++) {
-    item_num[i].onclick = function () { //将每个增加数量的input的onclick事情绑到这个函数
-      addNumOnclick(item_price[i], item_num[i], item_num_price[i]);
+  var item = document.getElementsByClassName("item");
+  for(let i of item) {
+    i.children[2].firstElementChild.onclick = function () {
+      addNumOnclick(i.children[1], i.children[2].firstElementChild, i.children[3]);
     }
-    item_delete[i].onclick = function () { //将每个删除的onclick事情绑到这个函数
-      deleteOnclick(item_num_price[i]);
+    i.children[4].onclick = function () {
+      deleteOnclick(i.children[3]);
     }
   }
   var add_new_item = document.getElementById("add_new_item");
