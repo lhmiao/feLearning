@@ -1,0 +1,32 @@
+textarea {
+  width: 200px;
+  height: 100px;
+  resize: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:nth-of-type(2n+1), input {
+  margin-left: 50px;
+}
+
+#match {
+  margin: 0px;
+}
+
+div {
+  margin-top: 100px;
+}
+
+div span {
+  display: inline-block;
+  background-color: red;
+  color: white;
+}
+
+div span {
+  margin-left: 2px;
+  margin-top: 20px;
+}
