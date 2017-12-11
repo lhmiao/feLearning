@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+  color: white;
+}
+
+.all_content {
+  background-color: black;
+  overflow: hidden;
+  padding: 0px 200px;
+  min-width: 200px;
+}
+
+.all_content>div {
+  float: left;
+  height: 100px;
+}
+
+.main {
+  width: 100%;
+  background-color: red;
+}
+
+.left {
+  width: 200px;
+  background-color: pink;
+  margin-left: -100%;
+  position: relative;
+  left: -200px;
+}
+
+.right {
+  width: 200px;
+  background-color: blue;
+  margin-left: -200px;
+  position: relative;
+  left: 200px;
+}
