@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+
+.content {
+  display: flex;
+  color: white;
+}
+
+.left {
+  order: 1;
+  flex: 0 1 200px;
+  height: 100px;
+  background-color: pink;
+}
+
+.main {
+  order: 2;
+  flex: 1 1;
+  height: 100px;
+  background-color: red;
+}
+
+.right {
+  order: 3;
+  flex: 0 1 200px;
+  height: 100px;
+  background-color: blue;
+}
