@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+}
+
+.all_content>div {
+  float: left;
+  color: white;
+  height: 100px;
+}
+
+.main {
+  width: 100%;
+  background-color: red;
+}
+
+.left {
+  width: 200px;
+  background-color: pink;
+  margin-left: -100%;
+}
+
+.right {
+  width: 200px;
+  background-color: blue;
+  margin-left: -200px;
+}
+
+.main_inner {
+  margin: 0px 200px;
+  color: white;
+}
