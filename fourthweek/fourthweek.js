@@ -25,6 +25,10 @@ function sum() { //计算并显示所有商品总价
 
 function addNewItem() { //创建并添加新的商品
   var new_name = document.getElementById("new_item_name").value;
+  if(new_name=="") {
+    alert("请输入待添加的商品信息后再进行添加");
+    return;
+  }
   var new_price = document.getElementById("new_item_price").value;
   var new_num = document.getElementById("new_item_num").value;
   var new_num_price = new_price*new_num;
