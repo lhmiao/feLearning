@@ -1,12 +1,18 @@
+body {
+  background-color: #e0e0e0;
+}
+
 nav {
   display: flex;
   width: 1000px;
   flex-flow: row nowrap;
+  background-color: white;
 }
 
 nav div {
   position: relative;
   flex: 0 1 20%;
+  background-color: inherit;
 }
 
 a {
@@ -14,12 +20,12 @@ a {
   color: #787b83;
   text-decoration: none;
   text-align: center;
-  border: 1px solid #787b83;
-  height: 30px;
-  line-height: 30px;
+  padding: 10px 0px;
 }
 
-
+nav div + div {
+  border-left: 1px solid #787b83;
+}
 
 ul {
   position: absolute;
@@ -32,23 +38,37 @@ ul {
   transition: height 0.5s;
   width: 100%;
   text-align: center;
+  background-color: inherit;
 }
 
 nav div:hover a {
   color: #e74f4d;
 }
 
-nav div:hover ul {
-  height: 200px;
+nav div:nth-of-type(1):hover ul {
+  height: 123px;
+}
+
+nav div:nth-of-type(2):hover ul {
+  height: 205px;
+}
+
+nav div:nth-of-type(3):hover ul {
+  height: 164px;
+}
+
+nav div:nth-of-type(4):hover ul {
+  height: 123px;
+}
+
+nav div:nth-of-type(5):hover ul {
+  height: 82px;
 }
 
 li {
-  width: 99%;
-  height: 30px;
-  line-height: 30px;
-  background-color: white;
+  width: 100%;
+  padding: 10px 0px;
   transition: color 0.3s, background-color 0.3s;
-  border: 1px solid #787b83;
   border-top: none;
 }
 
