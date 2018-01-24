@@ -9,7 +9,7 @@ body {
 
 .left {
   order: 1;
-  flex: 0 1 200px;
+  flex: 0 0 200px;
   height: 100px;
   background-color: pink;
 }
@@ -23,7 +23,7 @@ body {
 
 .right {
   order: 3;
-  flex: 0 1 200px;
+  flex: 0 0 200px;
   height: 100px;
   background-color: blue;
 }
