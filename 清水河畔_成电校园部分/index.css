@@ -1,0 +1,221 @@
+body {
+  margin: 0px;
+  background-color: #f2ffff;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  position: relative;
+  min-width: 1000px;
+  margin: 0px 90px;
+}
+
+@media screen and (max-width:1181px) {
+  .container {
+    margin: 0px calc((100% - 1000px) / 2);
+  }
+}
+
+@media screen and (max-width:1001px) {
+  .container {
+    margin: 0px;
+  }
+}
+
+header {
+  color: white;
+  font-size: 12px;
+  font-family: Tahoma, Simsun, "Microsoft Yahei";
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.uestc_campus {
+  flex: 0 0 auto;
+  width: 93px;
+  height: 35px;
+  font-size: 14px;
+  background-image: url(images/bm_header.gif);
+  text-align: center;
+  line-height: 31px;
+}
+
+.header_space {
+  flex: 1 1;
+  background-color: #81b0ff;
+  height: 30.6px;
+}
+
+.header_right {
+  flex: 0 0 auto;
+  background-color: #81b0ff;
+  height: 30.6px;
+}
+
+.header_right_img {
+  padding-top: 6px;
+}
+
+.header_right_img:hover {
+  cursor: pointer;
+}
+
+.header_right>div {
+  display: inline-block;
+}
+
+.header_right>div, .header_right>span {
+  vertical-align: 9px;
+}
+
+.ad_card {
+  position: absolute;
+  color: black;
+  width: 294px;
+  background-image: url(images/gentlemanbg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #bbebf9;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  display: none;
+}
+
+.show_ad_information:hover .ad_card{
+  display: block;
+}
+
+.ad_card1 {
+  right: 70px;
+}
+
+.ad_card2 {
+  right: 32px;
+}
+
+.ad_img {
+  border: 2px solid #f2ffff;
+  border-radius: 2px;
+  margin: 10px 10px 20px 10px;
+}
+
+.ad_information {
+  display: inline-block;
+  vertical-align: 37px;
+}
+
+.ad_name {
+  color: #444;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 96px;
+}
+
+.ad_name:hover {
+  text-decoration: none;
+}
+
+.ad_title {
+  color: #999;
+}
+
+.ad_sign {
+  margin-top: 8px;
+}
+
+.ad_sign>img{
+  vertical-align: middle;
+}
+
+.ad_buttons {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #3583ba;
+  font-size: 12px;
+  width: 64px;
+}
+
+.ad_buttons:nth-of-type(1) {
+  margin-left: 10px;
+}
+
+.ad_buttons:hover {
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+
+.ad_medal {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.ad_medal>img {
+  vertical-align: top;
+}
+
+.ad_medal:hover {
+  cursor: pointer;
+}
+
+.all_content {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 12px;
+  font-family: Tahoma, Simsun, "Microsoft Yahei";
+  font-weight: 400;
+  color: #444;
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0px;
+}
+
+.content+div {
+  border-top: 1px dashed #cdcdcd;
+}
+
+.item {
+  flex: 1 1;
+}
+
+.item_img {
+  float: left;
+  padding-right: 5px;
+}
+
+.item_content {
+  display: inline-block;
+  line-height: 19.5px;
+}
+
+.item_content div:nth-of-type(1) {
+  font-weight: 700;
+  color: #4f7bc5;
+}
+
+.find_job, .new_student {
+  color: #ff0000;
+}
+
+.traffic {
+  color: #f90;
+}
+
+.today {
+  color: #f26c4f;
+  font-weight: 400;
+}
