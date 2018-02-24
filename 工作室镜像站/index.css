@@ -1,0 +1,170 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  color: #384452;
+  font-family: "Microsoft YaHei", sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0px calc((100% - 1250px) / 2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: white;
+  background-color: #3eb0dc;
+}
+
+@media screen and (max-width: 1388px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    padding: 0px calc((100% - 320px) / 2);
+  }
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav>div {
+  width: 100px;
+}
+
+.nav-a {
+  color: white;;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.underline {
+  margin: auto;
+  width: 0px;
+  border-bottom: 2px solid white;
+  transition: 0.3s width;
+}
+
+.nav-a:hover ~ div {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 50px auto 0px auto;
+  min-height: 700px;
+}
+
+@media screen and (max-width: 1015px) {
+  .main {
+    justify-content: center;
+  }
+}
+
+.left {
+  width: 60%;
+  min-width: 400px;
+}
+
+.search {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.search>h2 {
+  margin: 0px;
+}
+
+.name-last-update {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom: 1px solid #888;
+  font-size: 14px;
+}
+
+.source-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 7px 0px;
+  font-size: 14px;
+}
+
+.source-item>a {
+  color: #1c65b9;
+}
+
+.source-item:hover {
+  background-color: #6c717714;
+}
+
+.right {
+  width: 400px;
+}
+
+.right a {
+  color: #3eb0dc;
+  display: block;
+}
+
+.right a+a {
+  margin-top: 5px;
+}
+
+#notice h2 {
+  margin-top: 0px;
+}
+
+.get-iso>a, .mirrors-help>a {
+  width: 150px;
+  color: white;
+  text-align: center;
+  background-color: #3eb0dc;
+  padding: 5px;
+  transition: 0.3s background-color;
+}
+
+.get-iso>a:hover, .mirrors-help>a:hover {
+  background-color: #3693b7;
+}
+
+footer {
+  color: #bbb;
+  background-color: #333;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+footer a {
+  color: #bbb;
+  display: block;
+}
+
+footer a+a {
+  margin-top: 8px;
+}
+
+.address>p:nth-last-child(1) {
+  font-size: 12px;
+  color: #999;
+}
