@@ -99,7 +99,7 @@ window.onload = function () {
   /*var xhr = createXHR();
   if(xhr) {
     xhr.onreadystatechange = function () {
-      if(xhr.readystate===4) {
+      if(xhr.readyState===4) {
         if((xhr.status>=200&&xhr.status<300)||xhr.status===304) {
           //插入数据操作
         }
@@ -108,6 +108,8 @@ window.onload = function () {
         }
       }
     }
+    xhr.open("get", "", true);
+    xhr.send(null);
   }
   else {
     alert("您浏览器版本过低，无法获取资源数据，请将浏览器更新到最新版本后重新打开本页面");
