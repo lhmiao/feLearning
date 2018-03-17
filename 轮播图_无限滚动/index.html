@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="indexoo.css">
+  </head>
+  <body>
+    <div id="container"></div>
+    <script type="text/javascript" src="indexoo.js"></script>
+    <script type="text/javascript">
+      var carousel = new Carousel({
+        containerId: "container",
+        imgURLArray: ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg"],
+        imgWidth: 768,
+        imgHeight: 432,
+        direction: "right",
+        interval: 2000,
+        oneMoveTime: 500,
+        haveArrows: true,
+        haveButtons: true
+      });
+    </script>
+  </body>
+</html>

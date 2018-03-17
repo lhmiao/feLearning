@@ -1,0 +1,57 @@
+body {
+  margin: 0px;
+}
+
+#container {
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+#showPlace {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  z-index: 1;
+}
+
+#arrows {
+  color: #1a77da;
+  font-size: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#arrowLeft:hover, #arrowRight:hover {
+  background-color: #13121299;
+  cursor: pointer;
+}
+
+#buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 90%;
+  z-index: 2;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid #1a77da;
+  border-radius: 10px;
+}
+
+.circle:hover {
+  cursor: pointer;
+}
