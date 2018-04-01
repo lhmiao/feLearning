@@ -22,44 +22,54 @@ header {
   background-color: #3eb0dc;
 }
 
-@media screen and (max-width: 1388px) {
-  nav {
-    display: none;
-  }
-
-  header {
-    justify-content: center;
-    padding: 0px calc((100% - 320px) / 2);
-  }
-}
-
 nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
   align-items: center;
-}
-
-nav>div {
-  width: 100px;
+  margin-right: 55px;
 }
 
 .nav-a {
-  color: white;;
-  display: block;
-  text-align: center;
-  padding: 10px 0px;
+  color: white;
+  padding: 15px;
+  position: relative;
+  transition: all 0.2s linear;
 }
 
-.underline {
-  margin: auto;
+.nav-a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 100%;
   width: 0px;
+  height: 100%;
   border-bottom: 2px solid white;
-  transition: 0.3s width;
+  transition: all 0.2s;
 }
 
-.nav-a:hover ~ div {
+.nav-a:hover::before {
   width: 100%;
+  left: 0px;
+}
+
+.nav-a:hover ~ .nav-a::before {
+  left: 0px;
+}
+
+.nav-a:active {
+  background-color: white;
+  color: #3eb0dc;
+}
+
+@media screen and (max-width: 748px) {
+  header {
+    justify-content: center;
+    padding: 0px calc((100% - 357px) / 2);
+  }
+
+  nav {
+    margin-right: 0px;
+  }
 }
 
 .main {
@@ -69,12 +79,6 @@ nav>div {
   max-width: 1250px;
   margin: 50px auto 0px auto;
   min-height: 700px;
-}
-
-@media screen and (max-width: 1015px) {
-  .main {
-    justify-content: center;
-  }
 }
 
 .left {
@@ -119,6 +123,7 @@ nav>div {
 
 .right {
   width: 400px;
+  margin-left: calc(40% - 400px);
 }
 
 .right a {
@@ -128,6 +133,18 @@ nav>div {
 
 .right a+a {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 1070px) {
+  .main {
+    justify-content: center;
+  }
+
+  .right {
+    margin-left: 0px;
+    width: 60%;
+    min-width: 400px;
+  }
 }
 
 #notice h2 {
