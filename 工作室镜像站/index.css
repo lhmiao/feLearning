@@ -1,12 +1,11 @@
-html {
-  height: 100%;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-  margin: 0px;
   color: #384452;
   font-family: "Microsoft YaHei", sans-serif;
-  height: 100%;
 }
 
 a {
@@ -14,19 +13,24 @@ a {
 }
 
 header {
-  padding: 0px calc((100% - 1250px) / 2);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  color: white;
+  align-items: center;
   background-color: #3eb0dc;
+  height: 85px;
+  padding: 0px calc((100% - 1290px) / 2);
 }
 
-nav {
+header > h1 {
+  margin-left: 20px;
+  color: white;
+}
+
+header > nav {
+  margin-right: 78px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  margin-right: 55px;
 }
 
 .nav-a {
@@ -38,12 +42,12 @@ nav {
 
 .nav-a::before {
   content: "";
-  position: absolute;
-  top: 0px;
-  left: 100%;
   width: 0px;
   height: 100%;
   border-bottom: 2px solid white;
+  position: absolute;
+  top: 0px;
+  left: 100%;
   transition: all 0.2s;
 }
 
@@ -52,7 +56,7 @@ nav {
   left: 0px;
 }
 
-.nav-a:hover ~ .nav-a::before {
+.nav-a:hover ~ a::before {
   left: 0px;
 }
 
@@ -61,48 +65,33 @@ nav {
   color: #3eb0dc;
 }
 
-@media screen and (max-width: 748px) {
-  header {
-    justify-content: center;
-    padding: 0px calc((100% - 357px) / 2);
-  }
-
-  nav {
-    margin-right: 0px;
-  }
-}
-
 .main {
+  margin: 50px auto;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  max-width: 1250px;
-  margin: 50px auto 0px auto;
-  min-height: 700px;
+  flex-flow: row nowrap;
+  max-width: 1290px;
 }
 
-.left {
-  width: 60%;
-  min-width: 400px;
+.main-left {
+  flex: 0 1 800px;
+  margin-left: 20px;
 }
 
 .search {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.search>h2 {
-  margin: 0px;
-}
-
-.name-last-update {
+.main-title {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 15px 0px;
-  border-bottom: 1px solid #888;
-  font-size: 14px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #384452;
+}
+
+.main-title,
+#sourceList {
+  font-size: 0.9em;
 }
 
 .source-item {
@@ -110,48 +99,38 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 7px 0px;
-  font-size: 14px;
-}
-
-.source-item>a {
-  color: #1c65b9;
 }
 
 .source-item:hover {
   background-color: #6c717714;
 }
 
-.right {
-  width: 400px;
-  margin-left: calc(40% - 400px);
+.source-name {
+  color: #1c65b9;
 }
 
-.right a {
+.main-right {
+  flex: 0 0 400px;
+  margin: 0px 20px 0px 70px;
+}
+
+.main-right a {
   color: #3eb0dc;
   display: block;
 }
 
-.right a+a {
-  margin-top: 5px;
+#newsNotice > a,
+.get-iso > p,
+.get-iso > a,
+.mirrors-help > p,
+.mirrors-help > a,
+.link > a {
+  margin: 15px 0px;
 }
 
-@media screen and (max-width: 1070px) {
-  .main {
-    justify-content: center;
-  }
+.get-iso > a,
+.mirrors-help > a {
 
-  .right {
-    margin-left: 0px;
-    width: 60%;
-    min-width: 400px;
-  }
-}
-
-#notice h2 {
-  margin-top: 0px;
-}
-
-.get-iso>a, .mirrors-help>a {
   width: 150px;
   color: white;
   text-align: center;
@@ -160,28 +139,79 @@ nav {
   transition: 0.3s background-color;
 }
 
-.get-iso>a:hover, .mirrors-help>a:hover {
+.get-iso > a:hover,
+.mirrors-help > a:hover {
   background-color: #3693b7;
 }
 
 footer {
-  color: #bbb;
-  background-color: #333;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: #333;
+  color: #bbb;
+  height: 158px;
+}
+
+footer::before,
+footer::after {
+  content: "";
+}
+
+footer p,
+footer a {
+  margin: 14px 0px;
 }
 
 footer a {
-  color: #bbb;
   display: block;
+  color: #bbb;
 }
 
-footer a+a {
-  margin-top: 8px;
-}
-
-.address>p:nth-last-child(1) {
-  font-size: 12px;
+.copyright {
+  font-size: 0.7em;
   color: #999;
+}
+
+@media screen and (max-width: 830px) {
+  header {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 94px;
+  }
+
+  header > h1,
+  header > nav {
+    margin: 0px 20px;
+  }
+
+  .main {
+    flex-flow: column;
+  }
+
+  .main-left,
+  .main-right {
+    flex: auto;
+    margin: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  header,
+  .main,
+  footer {
+    width: 418px;
+  }
+
+
+
+  header > nav {
+    display: none;
+  }
+
+  footer {
+    flex-flow: column;
+    height: auto;
+  }
 }
